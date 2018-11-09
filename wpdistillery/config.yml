@@ -16,16 +16,16 @@
 wpversion: latest
 
 # language/timezone
-wplocale: en_US
-timezone: "America/New_York"
+wplocale: fr_CA
+timezone: "America/Toronto"
 
 # admin user settings
 admin:
   user: admin
-  password: admin
-  email: mail@domain.tld
-  first_name: ""
-  last_name: ""
+  password: notadmin
+  email: ereinach@gmail.com
+  first_name: "Edouard"
+  last_name: "Reinach"
 
 # scotch box db access
 db:
@@ -38,8 +38,8 @@ db:
 #################################################################
 
 wpsettings:
-  url: wpdistillery.vm
-  title: Example Title
+  url: p3p.vm
+  title: Pour 3 Points
   description: Example Description
   permalink_structure: "/%postname%/"
   thumbnail_width: 150
@@ -60,8 +60,8 @@ wpsettings:
 
 # install a custom theme via url, rename it and remove the default themes
 theme:
-  name: WPSeed
-  url: "https://github.com/flurinduerst/WPSeed/archive/master.zip"
+  name: g5_helium
+  url: "https://github.com/gantry/gantry5/releases/download/5.4.26/wordpress-tpl_g5_helium_v5.4.26.zip"
   rename: ""
   remove:
     - twentyfifteen
@@ -81,6 +81,9 @@ plugins_active:
   - regenerate-thumbnails
   - simple-page-ordering
   - user-switching
+  #timber
+  - timber-library
+  - gantry5
 
 # plugins to install
 plugins_inactive:
